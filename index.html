@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#07150f" />
+  <title>Golden Memories — Dewa & Cici</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+
+  <header class="topbar">
+    <div class="brand">D & C <span>•</span> 2026</div>
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Nyalakan musik">
+      <span class="music-icon" id="musicIcon">♪</span>
+      <span id="musicLabel">Musik Off</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section reveal">
+      <div class="hero-inner">
+        <p class="eyebrow">A little archive of us</p>
+        <h1>Golden<br><em>Memories.</em></h1>
+        <p class="hero-copy">Sembilan potongan cerita. Banyak tawa. Sedikit drama. Dan terlalu banyak alasan untuk bilang, “ternyata kita sudah sejauh ini.”</p>
+        <a href="#memories" class="hero-cta">Lihat perjalanan <span>↓</span></a>
+      </div>
+      <div class="hero-date">
+        <span>20</span>
+        <small>SEPTEMBER</small>
+        <span>2006 — ∞</span>
+      </div>
+    </section>
+
+    <section class="profile section reveal" id="profile">
+      <div class="section-heading">
+        <p class="eyebrow">The two people behind the memories</p>
+        <h2>Dua orang, dua warna,<br><em>satu cerita.</em></h2>
+      </div>
+      <div class="profile-grid">
+        <article class="profile-card dewa-card">
+          <div class="profile-number">01</div>
+          <div class="profile-info">
+            <p class="profile-role">The one who...</p>
+            <h3>Dewa Erlangga</h3>
+            <div class="facts">
+              <span><b>Lahir</b> 25 Februari 2008</span>
+              <span><b>Suka</b> Hijau</span>
+              <span><b>Makanan</b> Matcha</span>
+              <span><b>Suka dari pasangan</b> Di manjain diam-diam</span>
+            </div>
+          </div>
+          <div class="profile-orb orb-green"></div>
+        </article>
+
+        <article class="profile-card cici-card">
+          <div class="profile-number">02</div>
+          <div class="profile-info">
+            <p class="profile-role">The one who...</p>
+            <h3>Sri Handayani <small>(Cici)</small></h3>
+            <div class="facts">
+              <span><b>Lahir</b> 20 September 2006</span>
+              <span><b>Suka</b> Hitam</span>
+              <span><b>Makanan</b> Kue sus</span>
+              <span><b>Suka dari pasangan</b> Perhatian terhadap hal kecil</span>
+            </div>
+          </div>
+          <div class="profile-orb orb-black"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="memories section reveal" id="memories">
+      <div class="section-heading memory-heading">
+        <div>
+          <p class="eyebrow">Chapter one → forever maybe?</p>
+          <h2>9 moments worth<br><em>remembering.</em></h2>
+        </div>
+        <p class="hint">Klik foto. Setiap frame punya cerita sendiri.</p>
+      </div>
+
+      <div class="gallery" id="gallery">
+        <button class="memory-card card-1" data-index="0" type="button" aria-label="Buka cerita foto 1">
+          <div class="photo-wrap"><img src="assets/foto-1.jpg" alt="Foto 1" loading="lazy"></div>
+          <div class="card-meta"><span>01</span><span>THE BEGINNING</span></div>
+          <h3>Benang yang menghubungkan semuanya.</h3>
+        </button>
+
+        <button class="memory-card card-2" data-index="1" type="button" aria-label="Buka cerita foto 2">
+          <div class="photo-wrap"><img src="assets/foto-2.jpg" alt="Foto 2" loading="lazy"></div>
+          <div class="card-meta"><span>02</span><span>BIKE DATE</span></div>
+          <h3>First ride, first “suka banget”.</h3>
+        </button>
+
+        <button class="memory-card card-3" data-index="2" type="button" aria-label="Buka cerita foto 3">
+          <div class="photo-wrap"><img src="assets/foto-3.jpg" alt="Foto 3" loading="lazy"></div>
+          <div class="card-meta"><span>03</span><span>AFTER WORK</span></div>
+          <h3>Sesingkat mampir, sepanjang kenangannya.</h3>
+        </button>
+
+        <button class="memory-card card-4" data-index="3" type="button" aria-label="Buka cerita foto 4">
+          <div class="photo-wrap"><img src="assets/foto-4.jpg" alt="Foto 4" loading="lazy"></div>
+          <div class="card-meta"><span>04</span><span>MOVIE NIGHT</span></div>
+          <h3>Seru di layar, diuji setelahnya.</h3>
+        </button>
+
+        <button class="memory-card card-5" data-index="4" type="button" aria-label="Buka cerita foto 5">
+          <div class="photo-wrap"><img src="assets/foto-5.jpg" alt="Foto 5" loading="lazy"></div>
+          <div class="card-meta"><span>05</span><span>GRADUATION</span></div>
+          <h3>Senior. Pacar. Tetap jadi seseorang yang dibanggakan.</h3>
+        </button>
+
+        <button class="memory-card card-6" data-index="5" type="button" aria-label="Buka cerita foto 6">
+          <div class="photo-wrap"><img src="assets/foto-6.jpg" alt="Foto 6" loading="lazy"></div>
+          <div class="card-meta"><span>06</span><span>LATE NIGHT</span></div>
+          <h3>Malam panjang, cerita yang lebih panjang.</h3>
+        </button>
+
+        <button class="memory-card card-7" data-index="6" type="button" aria-label="Buka cerita foto 7">
+          <div class="photo-wrap"><img src="assets/foto-7.jpg" alt="Foto 7" loading="lazy"></div>
+          <div class="card-meta"><span>07</span><span>CURUG CIAMPEA</span></div>
+          <h3>Sempat marahan. Tetap pulang dengan baik.</h3>
+        </button>
+
+        <button class="memory-card card-8" data-index="7" type="button" aria-label="Buka cerita foto 8">
+          <div class="photo-wrap"><img src="assets/foto-8.jpg" alt="Foto 8" loading="lazy"></div>
+          <div class="card-meta"><span>08</span><span>18TH BIRTHDAY</span></div>
+          <h3>Bad mood dulu, surprise kemudian. Wkwk.</h3>
+        </button>
+
+        <button class="memory-card card-9" data-index="8" type="button" aria-label="Buka cerita foto 9">
+          <div class="photo-wrap"><img src="assets/foto-9.jpg" alt="Foto 9" loading="lazy"></div>
+          <div class="card-meta"><span>09</span><span>SPECIAL DAY</span></div>
+          <h3>20 tahun Cici — a beautiful day.</h3>
+        </button>
+      </div>
+
+      <div class="scroll-note"><span></span> keep scrolling, there’s more <span></span></div>
+    </section>
+
+    <section class="little-things section reveal">
+      <div class="section-heading">
+        <p class="eyebrow">It’s the little things</p>
+        <h2>Hal kecil yang ternyata<br><em>besar artinya.</em></h2>
+      </div>
+      <div class="little-grid">
+        <div class="little-box">
+          <span class="mini-icon">✦</span>
+          <p class="mini-label">DEWA → CICI</p>
+          <h3>Perhatian terhadap hal kecil.</h3>
+          <p>Bukan cuma soal hari besar. Kadang justru dari hal-hal sederhana, seperti mengingat detail kecil yang pernah diceritakan.</p>
+        </div>
+        <div class="little-box">
+          <span class="mini-icon">❍</span>
+          <p class="mini-label">CICI → DEWA</p>
+          <h3>Di manjain diam-diam.</h3>
+          <p>Tidak harus selalu diumumkan. Ada jenis perhatian yang terasa justru karena dilakukan tanpa banyak bilang-bilang.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter section reveal" id="letter">
+      <div class="letter-shell">
+        <div class="letter-top">
+          <span>09.20.2026</span>
+          <span>FOR CICI</span>
+        </div>
+        <div class="letter-content">
+          <p class="eyebrow">A letter from Dewa</p>
+          <h2>Untuk kak Cici,</h2>
+          <p class="letter-main">“Semoga untuk kedepannya kita bisa lebih mengenal satu sama lain lebih dalam. Semoga kita selalu bisa lewatin hari-hari yang sulit, harus selalu LDR, semoga kita bisa lalui itu.”</p>
+          <p class="letter-main">“Semangat kuliah dan kerjanya. Aku selalu support kamu, apa pun materinya.”</p>
+          <div class="signature">
+            <span>with all my support,</span>
+            <strong>Dewa</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section reveal">
+      <div class="closing-mark">D <span>×</span> C</div>
+      <h2>Some days will be messy.<br><em>Let’s still make them ours.</em></h2>
+      <p>Selamat ulang tahun, Kak Cici. Terima kasih sudah menjadi bagian dari begitu banyak hari yang akhirnya jadi kenangan.</p>
+      <div class="closing-line"></div>
+      <p class="closing-small">golden memories • made with love • kept forever</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 Dewa & Cici</span>
+    <span>Made by Your "Abang".</span>
+  </footer>
+
+  <div class="modal" id="memoryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Tutup">×</button>
+      <div class="modal-image"><img id="modalImage" src="" alt=""></div>
+      <div class="modal-body">
+        <p class="modal-number" id="modalNumber">01</p>
+        <p class="modal-kicker" id="modalKicker"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalText"></p>
+      </div>
+      <div class="modal-nav">
+        <button type="button" id="prevMemory">← Sebelumnya</button>
+        <button type="button" id="nextMemory">Berikutnya →</button>
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/sempurna.mp3" type="audio/mpeg" />
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
